@@ -31,13 +31,16 @@ android {
         main.java.srcDirs += 'src/main/kotlin'
     }
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 21
     }
     lintOptions {
         disable 'InvalidPackage'
     }
     dependencies {
-        implementation 'com.google.android.play:core:1.10.0'
+        // implementation 'com.google.android.play:core:1.10.0'
+        // Make sure you also include that repository in your project's build.gradle file.
+        implementation 'com.google.android.play:review:2.0.2'
+        // implementation 'com.google.android.play:review-ktx:2.0.2'
     }
 }
 
